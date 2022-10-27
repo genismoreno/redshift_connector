@@ -9,4 +9,4 @@ RUN pip install -r requirements.txt
 COPY app /opt/app
 WORKDIR /opt/app
 # Set the CMD to your handler (could also be done as a parameter override outside of the Dockerfile)
-CMD [ "python", "main.py" ]
+ENTRYPOINT [ "python", "app.py"]
